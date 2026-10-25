@@ -20,7 +20,7 @@
 
         @font-face {
             font-family: 'new_one';
-            src: url('fonts/SansitaSwashed-VariableFont_wght.ttf') format('truetype');
+            src: url('../fonts/Sa.ttf') format('truetype');
         }
 
         button {
@@ -42,18 +42,25 @@
             border-color: mediumvioletred;
             color: white;
         }
+        h1 {
+            font-family: 'new_one', sans-serif; /* 让标题也用上你的花体字 */
+            font-size: 60px;                    /* 这就是控制大小的魔法，数字随便改 */
+            color: #333;                        /* 选个好看的颜色，比如深灰色 */
+            margin-bottom: 40px;                /* 让标题和下面的按钮拉开一点距离 */
+            text-align: center;                 /* 居中 */
+        }
     </style>
 </head>
 <body class="body">
-<h1>Maj's mahjong!</h1>
-<button class="button">
+<h1>Maj's  mahjong!</h1>
+<button class="button" onclick="window.location.href='brave-gamer.html'">
     Brave
 </button>
-<button class="button">
+<button class="button" onclick="window.location.href='weak-gamer.html'">
     Weak
 </button>
-<button class="button">
-    NEW-PLAYER
+<button class="button" onclick="window.location.href='new-gamer.html'">
+    New-Player
 </button>
 </body>
 </html>
